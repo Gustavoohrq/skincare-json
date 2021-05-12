@@ -1,0 +1,11 @@
+{
+  "name": "skincare-json",
+  "version": "1.0.0",
+  "description": "Clear JSON errors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gustavo Henrique",
+  "license": "ISC"
+}
