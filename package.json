@@ -11,6 +11,10 @@
     "json",
     "jsonbroken"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Gustavoohrq/skincare-json"
+  },
   "author": "Gustavo Henrique",
   "license": "ISC"
 }
