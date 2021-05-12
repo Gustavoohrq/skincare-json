@@ -1,6 +1,6 @@
 {
   "name": "skincare-json",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Clear JSON errors",
   "main": "index.js",
   "scripts": {
