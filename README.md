@@ -44,9 +44,9 @@ const jsonDirty = '{
       "whatever3": "\rwhata"",
     }'
     try {
-      const jsonClean = JSON.parse(jsonBroken);
+      const jsonClean = JSON.parse(jsonDirty);
     } catch (error) {
-      const jsonClean = skinJSON.parse(jsonBroken);
+      const jsonClean = skinJSON.parse(jsonDirty);
     }
 console.log(jsonClean);
 
