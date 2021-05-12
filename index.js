@@ -4,4 +4,4 @@ const JSONSkincare = {
   parse
 }
 
-module.export = JSONSkincare
+module.exports = JSONSkincare
