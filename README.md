@@ -43,7 +43,11 @@ const jsonDirty = '{
       "whatever2": "easy "peasy" ""lemon squeezy"",
       "whatever3": "\rwhata"",
     }'
-const jsonClean = skinJSON.parse(jsonBroken);
+    try {
+      const jsonClean = JSON.parse(jsonBroken);
+    } catch (error) {
+      const jsonClean = skinJSON.parse(jsonBroken);
+    }
 console.log(jsonClean);
 
 ```
