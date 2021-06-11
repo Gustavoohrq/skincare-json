@@ -1,5 +1,7 @@
 module.exports = function parse(jsonDirty) {
   jsonDirty = JSON.stringify(jsonDirty)
+    .replace(/(")({)(")/g, "$2$3")
+    .replace(/(")(})(")/g, "$1$2")
     .replace(/(\".*\":)\"\"(.*)\"\"/g, '$1 ""$2\\""')
     .replace(/\\r/g, '')
     .replace(/\\n/g, '')
