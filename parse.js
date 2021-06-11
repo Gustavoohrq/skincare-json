@@ -1,6 +1,9 @@
 module.exports = function parse(jsonDirty) {
   jsonDirty = JSON.stringify(jsonDirty)
-    .replace(/(\".*\":)\"\"(.*)\"\"/g, '$1 ""$2\\""').replace(/\\"/g, '"')
+    
+    .replace(/(\".*\":)\"\"(.*)\"\"/g, '$1 ""$2\\""')
+    .replace(/\\r/g, '"')
+    .replace(/\\n/g, '"')
     .replace(/\\"/g, '"')
     .replace(/:",/g, ': "",')
     .replace(/([0-9]+),([0-9]+)/g, '$1$2')
