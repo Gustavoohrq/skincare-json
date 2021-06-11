@@ -19,6 +19,7 @@ module.exports = function parse(jsonDirty) {
     .replace(/(:)\s("")\s([a-zA-Z])/g, '$1 "$3')
     .replace(/[']/g, '')
     .replace(/[\n\r]/g, "")
+    .replace(/(")(:\s?)(")(,)/g, '$1$2"$3$4')
   var jsonFormatedAndClean = JSON.parse(jsonDirty)
   return jsonFormatedAndClean
 }
